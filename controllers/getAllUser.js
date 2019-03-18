@@ -5,7 +5,7 @@ module.exports = async (ctx) => {
   ctx.state.data = await queryAllUser();
 }
 
-function queryAllUser(value) {
+function queryAllUser() {
   return new Promise(function (resolve, reject) {
     // var sql = 'SELECT * FROM game_user ORDER BY ' + jdbc.escapeId('uid');
     var sql = 'SELECT * FROM game_user';
